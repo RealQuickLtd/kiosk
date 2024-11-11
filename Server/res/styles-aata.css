@@ -1,0 +1,90 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    overflow: hidden; /* Hide scrollbars */
+    margin: 0 5vh;
+    animation-name: move;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.rate-list {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.rate-list li {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-weight: bold;
+    color: #555555;
+}
+
+.rate {
+    font-weight: bold;
+    color: deeppink;
+    font-size: 1.8rem;
+}
+header {
+    position: fixed; /* Fix header to top */
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make header full width */
+    padding: 17px;
+    padding: 17px;
+    padding-bottom: 15px;
+    z-index: 1; /* Ensure header stays on top */
+    background-color: deeppink;
+  }
+  /* @keyframes move {
+    0% {
+      margin-bottom: -400px;
+    }
+    100% {
+      margin-bottom: 200px;
+    }
+  } */
